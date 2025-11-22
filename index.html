@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二次元博客 - Anime Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 背景动画粒子 -->
+    <div id="particles-js"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Anime Blog</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主视觉区域 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="欢迎来到二次元世界">欢迎来到二次元世界</h1>
+            <p class="hero-subtitle">探索无限可能的动漫宇宙 ✨</p>
+            <div class="hero-buttons">
+                <a href="blog.html" class="btn btn-primary">
+                    <span>开始阅读</span>
+                    <div class="btn-shine"></div>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>了解更多</span>
+                    <div class="btn-shine"></div>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <div class="card-glow"></div>
+                <div class="card-content">🌸</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色文章卡片 -->
+    <section class="featured-posts">
+        <h2 class="section-title">
+            <span>✨ 精选文章 ✨</span>
+        </h2>
+        <div class="posts-grid">
+            <article class="post-card" data-category="动漫推荐">
+                <div class="post-image">
+                    <div class="image-placeholder gradient-1">
+                        <span class="placeholder-icon">🎭</span>
+                    </div>
+                    <span class="post-category">动漫推荐</span>
+                </div>
+                <div class="post-content">
+                    <h3>2024年必看动漫盘点</h3>
+                    <p>本季度最值得关注的动漫作品，带你领略不同的动画风格...</p>
+                    <div class="post-meta">
+                        <span class="post-date">📅 2024-03-15</span>
+                        <span class="post-views">👁️ 1.2k</span>
+                    </div>
+                    <a href="post1.html" class="read-more">阅读全文 →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="角色分析">
+                <div class="post-image">
+                    <div class="image-placeholder gradient-2">
+                        <span class="placeholder-icon">⚔️</span>
+                    </div>
+                    <span class="post-category">角色分析</span>
+                </div>
+                <div class="post-content">
+                    <h3>经典角色人物志</h3>
+                    <p>深度剖析那些让我们难以忘怀的动漫角色...</p>
+                    <div class="post-meta">
+                        <span class="post-date">📅 2024-03-10</span>
+                        <span class="post-views">👁️ 890</span>
+                    </div>
+                    <a href="post2.html" class="read-more">阅读全文 →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="音乐鉴赏">
+                <div class="post-image">
+                    <div class="image-placeholder gradient-3">
+                        <span class="placeholder-icon">🎵</span>
+                    </div>
+                    <span class="post-category">音乐鉴赏</span>
+                </div>
+                <div class="post-content">
+                    <h3>动漫OST赏析</h3>
+                    <p>那些让人心潮澎湃的动漫原声音乐...</p>
+                    <div class="post-meta">
+                        <span class="post-date">📅 2024-03-05</span>
+                        <span class="post-views">👁️ 756</span>
+                    </div>
+                    <a href="post3.html" class="read-more">阅读全文 →</a>
+                </div>
+            </article>
+
+            <article class="post-card" data-category="手办展示">
+                <div class="post-image">
+                    <div class="image-placeholder gradient-4">
+                        <span class="placeholder-icon">🎎</span>
+                    </div>
+                    <span class="post-category">手办展示</span>
+                </div>
+                <div class="post-content">
+                    <h3>珍藏手办开箱</h3>
+                    <p>最新入手的限定手办开箱评测...</p>
+                    <div class="post-meta">
+                        <span class="post-date">📅 2024-03-01</span>
+                        <span class="post-views">👁️ 654</span>
+                    </div>
+                    <a href="post4.html" class="read-more">阅读全文 →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 关于部分 -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>关于本站</h2>
+                <p>这里是一个充满热爱的二次元世界 🌟</p>
+                <p>分享动漫、游戏、音乐、手办等一切与二次元相关的内容。</p>
+                <p>让我们一起探索这个美好的次元空间!</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">文章数量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10k+</div>
+                    <div class="stat-label">访问量</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">粉丝数</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="blog.html">博客</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">📺 Bilibili</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>📧 anime@blog.com</p>
+                <p>🌐 GitHub Pages</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Anime Blog. Made with ❤️ and ✨</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <!-- 樱花飘落效果 -->
+    <div class="sakura-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

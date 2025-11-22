@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客文章 - Anime Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <!-- 背景动画粒子 -->
+    <div id="particles-js"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <span class="logo-text">Anime Blog</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="blog.html" class="active">博客</a></li>
+                <li><a href="index.html#about">关于</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <h1 class="glitch" data-text="博客文章">博客文章</h1>
+        <p>探索二次元的无限可能 🌟</p>
+    </section>
+
+    <!-- 搜索和筛选 -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 搜索文章...">
+            </div>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">全部</button>
+                <button class="filter-btn" data-category="动漫推荐">动漫推荐</button>
+                <button class="filter-btn" data-category="角色分析">角色分析</button>
+                <button class="filter-btn" data-category="音乐鉴赏">音乐鉴赏</button>
+                <button class="filter-btn" data-category="手办展示">手办展示</button>
+                <button class="filter-btn" data-category="游戏评测">游戏评测</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 博客文章列表 -->
+    <section class="blog-section">
+        <div class="blog-container">
+            <div class="blog-grid" id="blogGrid">
+                <!-- 文章卡片 -->
+                <article class="blog-card" data-category="动漫推荐">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-1">
+                            <span class="placeholder-icon">🎭</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post1.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">动漫推荐</span>
+                            <span class="card-date">2024-03-15</span>
+                        </div>
+                        <h3><a href="post1.html">2024年必看动漫盘点</a></h3>
+                        <p>本季度最值得关注的动漫作品,从热血战斗到温馨日常,每一部都有其独特的魅力。让我们一起来看看这些精彩的作品吧!</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 1.2k</span>
+                                <span>❤️ 89</span>
+                                <span>💬 23</span>
+                            </div>
+                            <a href="post1.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="角色分析">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-2">
+                            <span class="placeholder-icon">⚔️</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post2.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">角色分析</span>
+                            <span class="card-date">2024-03-10</span>
+                        </div>
+                        <h3><a href="post2.html">经典角色人物志</a></h3>
+                        <p>深度剖析那些让我们难以忘怀的动漫角色,探讨他们的性格特点、成长历程以及对故事的影响。</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 890</span>
+                                <span>❤️ 67</span>
+                                <span>💬 15</span>
+                            </div>
+                            <a href="post2.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="音乐鉴赏">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-3">
+                            <span class="placeholder-icon">🎵</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post3.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">音乐鉴赏</span>
+                            <span class="card-date">2024-03-05</span>
+                        </div>
+                        <h3><a href="post3.html">动漫OST赏析</a></h3>
+                        <p>那些让人心潮澎湃的动漫原声音乐,从激昂的战斗BGM到温柔的ED,每一首都承载着无数回忆。</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 756</span>
+                                <span>❤️ 54</span>
+                                <span>💬 12</span>
+                            </div>
+                            <a href="post3.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="手办展示">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-4">
+                            <span class="placeholder-icon">🎎</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post4.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">手办展示</span>
+                            <span class="card-date">2024-03-01</span>
+                        </div>
+                        <h3><a href="post4.html">珍藏手办开箱</a></h3>
+                        <p>最新入手的限定手办开箱评测,从细节做工到整体呈现,为你带来最真实的开箱体验。</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 654</span>
+                                <span>❤️ 45</span>
+                                <span>💬 8</span>
+                            </div>
+                            <a href="post4.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="游戏评测">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-1">
+                            <span class="placeholder-icon">🎮</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post5.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">游戏评测</span>
+                            <span class="card-date">2024-02-28</span>
+                        </div>
+                        <h3><a href="post5.html">最新二次元游戏测评</a></h3>
+                        <p>深度评测最新上线的二次元手游,从画面到玩法,从剧情到系统,全方位为你解析。</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 923</span>
+                                <span>❤️ 72</span>
+                                <span>💬 19</span>
+                            </div>
+                            <a href="post5.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="动漫推荐">
+                    <div class="blog-card-image">
+                        <div class="image-placeholder gradient-2">
+                            <span class="placeholder-icon">🌸</span>
+                        </div>
+                        <div class="image-overlay">
+                            <a href="post6.html" class="overlay-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="card-header">
+                            <span class="card-category">动漫推荐</span>
+                            <span class="card-date">2024-02-25</span>
+                        </div>
+                        <h3><a href="post6.html">治愈系动漫推荐</a></h3>
+                        <p>在忙碌的生活中,这些温暖的动漫作品能够治愈你的心灵,带来片刻的宁静与美好。</p>
+                        <div class="card-footer">
+                            <div class="card-stats">
+                                <span>👁️ 1.1k</span>
+                                <span>❤️ 95</span>
+                                <span>💬 28</span>
+                            </div>
+                            <a href="post6.html" class="read-more-btn">阅读更多 →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- 加载更多按钮 -->
+            <div class="load-more-container">
+                <button class="load-more-btn">
+                    <span>加载更多</span>
+                    <div class="btn-shine"></div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="blog.html">博客</a></li>
+                    <li><a href="index.html#about">关于</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦 Twitter</a>
+                    <a href="#" class="social-link">📺 Bilibili</a>
+                    <a href="#" class="social-link">📷 Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>📧 anime@blog.com</p>
+                <p>🌐 GitHub Pages</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Anime Blog. Made with ❤️ and ✨</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <!-- 樱花飘落效果 -->
+    <div class="sakura-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>
